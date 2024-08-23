@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,11 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
-<div class="h-screen bg-[#010312] flex justify-center items-center text-white  ">
-      <div id="full" class="flex justify-center   h-3/5">
-        <div id="calculatorr"   class=" w-80 h-full rounded-xl  border border-[#FE9F1A] bg-[#262626]">
+  </head>
+  <body>
+    <div
+      class="h-screen bg-[#010312] flex justify-center items-center text-white"
+    >
+      <div id="full" class="flex justify-center h-3/5">
+        <div
+          id="calculatorr"
+          class="w-80 h-full rounded-xl border border-[#FE9F1A] bg-[#262626]"
+        >
           <div
             class="w-full text-white text-5xl flex pl-3 items-center h-20 bg-[#333333] rounded-t-xl"
           >
@@ -127,57 +132,155 @@
             </div>
           </div>
         </div>
-        <div id="currency"  class="[display:none]  w-80 h-full rounded-xl  border border-[#FE9F1A]  bg-[#262626]">
-          <h1 class="text-3xl flex justify-center items-center mt-5">Currency convertor</h1>
+        <div
+          id="currency"
+          class="[display:none] w-80 h-full rounded-xl border border-[#FE9F1A] bg-[#262626]"
+        >
+          <h1 class="text-3xl flex justify-center items-center mt-5">
+            Currency convertor
+          </h1>
           <div class="gap-10 flex flex-col mt-10">
-            <div class="flex justify-center items-center gap-5 text-lg">Rupees(₹):<input id="rupees" type="number" class="relative right-2 pl-2 text-black" placeholder="₹"></div>
-            <div class="flex ml-5 items-center gap-5 text-lg text-start" >Dollar($): <div id="dollar"></div></div>
-            <div class="flex ml-5 justify-start items-center gap-5 text-lg">Euro(€): <div id="euro"></div></div>
-            <div class="flex ml-5 items-center gap-5 text-lg">Yen(¥): <div id="yen"></div></div>
+            <div class="flex justify-center items-center gap-5 text-lg">
+              Rupees(₹):<input
+                id="rupees"
+                type="number"
+                class="relative right-2 pl-2 text-black"
+                placeholder="₹"
+              />
+            </div>
+            <div class="flex ml-5 items-center gap-5 text-lg text-start">
+              Dollar($):
+              <div id="dollar"></div>
+            </div>
+            <div class="flex ml-5 justify-start items-center gap-5 text-lg">
+              Euro(€):
+              <div id="euro"></div>
+            </div>
+            <div class="flex ml-5 items-center gap-5 text-lg">
+              Yen(¥):
+              <div id="yen"></div>
+            </div>
           </div>
-          <div class=" flex justify-center items-center mt-10">
-            <button onclick="enter1()" class="text-3xl px-3 py-1 rounded-xl bg-[#FE9F1A] text-white border-2 border-[#895205]">
+          <div class="flex justify-center items-center mt-10">
+            <button
+              onclick="enter1()"
+              class="text-3xl px-3 py-1 rounded-xl bg-[#FE9F1A] text-white border-2 border-[#895205]"
+            >
               Convert
             </button>
           </div>
         </div>
-        <div id="crypto" class="[display:none] w-80 h-full rounded-xl  border border-[#FE9F1A]  bg-[#262626]">
-          <h1 class="text-3xl flex justify-center items-center mt-5">Crypto convertor</h1>
+        <div
+          id="crypto"
+          class="[display:none] w-80 h-full rounded-xl border border-[#FE9F1A] bg-[#262626]"
+        >
+          <h1 class="text-3xl flex justify-center items-center mt-5">
+            Crypto convertor
+          </h1>
           <div class="gap-10 flex flex-col mt-10">
-            <div class="flex justify-center items-center gap-5 text-lg">Rupees(₹):<input id="rupees2" type="number" class="relative w-48 pl-2 text-black " placeholder="₹"></div>
-            <div class="flex justify-start ml-3 items-center gap-5 text-lg">Bitcoin(₿): <div id="bitcoin"></div></div>
-            <div class="flex justify-start ml-3 items-center gap-5 text-lg">Ethereum(Ξ): <div id="ethereum"></div></div>
-            <div class="flex justify-start ml-3 items-center gap-5 text-lg">Dogecoin(Ð): <div id="dogecoin"></div></div>
+            <div class="flex justify-center items-center gap-5 text-lg">
+              Rupees(₹):<input
+                id="rupees2"
+                type="number"
+                class="relative w-48 pl-2 text-black"
+                placeholder="₹"
+              />
+            </div>
+            <div class="flex justify-start ml-3 items-center gap-5 text-lg">
+              Bitcoin(₿):
+              <div id="bitcoin"></div>
+            </div>
+            <div class="flex justify-start ml-3 items-center gap-5 text-lg">
+              Ethereum(Ξ):
+              <div id="ethereum"></div>
+            </div>
+            <div class="flex justify-start ml-3 items-center gap-5 text-lg">
+              Dogecoin(Ð):
+              <div id="dogecoin"></div>
+            </div>
           </div>
-          <div class=" flex justify-center items-center mt-10">
-            <button onclick="enter2()" id="enter2" class="text-3xl px-3 py-1 rounded-xl bg-[#FE9F1A] text-white border-2 border-[#895205]">
+          <div class="flex justify-center items-center mt-10">
+            <button
+              onclick="enter2()"
+              id="enter2"
+              class="text-3xl px-3 py-1 rounded-xl bg-[#FE9F1A] text-white border-2 border-[#895205]"
+            >
               Convert
             </button>
           </div>
         </div>
-        <div id="temperature" class="[display:none] w-80 h-full rounded-xl  border border-[#FE9F1A]  bg-[#262626]">
-          <h1 class="text-3xl flex justify-center items-center mt-5">Temperature convertor</h1>
+        <div
+          id="temperature"
+          class="[display:none] w-80 h-full rounded-xl border border-[#FE9F1A] bg-[#262626]"
+        >
+          <h1 class="text-3xl flex justify-center items-center mt-5">
+            Temperature convertor
+          </h1>
           <div class="gap-10 flex flex-col mt-10">
-            <div class="flex justify-center items-center gap-5 text-lg">Celsius(°C):<input type="number" id="celcius" class="text-black relative w-48 pl-2" placeholder="°C"></div>
-            <div class="flex justify-start items-center gap-5 text-lg ml-2">Fahrenheit(°F): <div id="fahrenheit"></div></div>
-            <div class="flex justify-start items-center gap-5 text-lg ml-2">Kelvin(K): <div id="kelvin"></div></div>
+            <div class="flex justify-center items-center gap-5 text-lg">
+              Celsius(°C):<input
+                type="number"
+                id="celcius"
+                class="text-black relative w-48 pl-2"
+                placeholder="°C"
+              />
+            </div>
+            <div class="flex justify-start items-center gap-5 text-lg ml-2">
+              Fahrenheit(°F):
+              <div id="fahrenheit"></div>
+            </div>
+            <div class="flex justify-start items-center gap-5 text-lg ml-2">
+              Kelvin(K):
+              <div id="kelvin"></div>
+            </div>
           </div>
-          <div class=" flex justify-center items-center mt-10">
-            <button onclick="enter3()" class="text-3xl px-3 py-1 rounded-xl bg-[#FE9F1A] text-white border-2 border-[#895205]">
+          <div class="flex justify-center items-center mt-10">
+            <button
+              onclick="enter3()"
+              class="text-3xl px-3 py-1 rounded-xl bg-[#FE9F1A] text-white border-2 border-[#895205]"
+            >
               Convert
             </button>
           </div>
         </div>
-        <div class=" w-14 justify-center mt-3  flex flex-col gap-5 ">
-          <button id="calc" onclick="change('calculator')"  class=" h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"><i class="fa-solid fa-plus-minus text-[#FE9F1A] text-3xl flex justify-center items-center"></i></button>
-          <button  onclick="change('currency')" class=" h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"><i class="fa-sharp fa-solid fa-dollar-sign text-[#FE9F1A] text-3xl flex justify-center items-center"></i></button>
-          <button  onclick="change('crypto')" class=" h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"><i class="fa-brands fa-bitcoin text-[#FE9F1A] text-3xl flex justify-center items-center"></i></button>
-          <button  onclick="change('temp')" class=" h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"><i class="fa-solid fa-temperature-high text-[#FE9F1A] text-3xl flex justify-center items-center"></i></button>
+        <div class="w-14 justify-center mt-3 flex flex-col gap-5">
+          <button
+            id="calc"
+            onclick="change('calculator')"
+            class="h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"
+          >
+            <i
+              class="fa-solid fa-plus-minus text-[#FE9F1A] text-3xl flex justify-center items-center"
+            ></i>
+          </button>
+          <button
+            onclick="change('currency')"
+            class="h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"
+          >
+            <i
+              class="fa-sharp fa-solid fa-dollar-sign text-[#FE9F1A] text-3xl flex justify-center items-center"
+            ></i>
+          </button>
+          <button
+            onclick="change('crypto')"
+            class="h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"
+          >
+            <i
+              class="fa-brands fa-bitcoin text-[#FE9F1A] text-3xl flex justify-center items-center"
+            ></i>
+          </button>
+          <button
+            onclick="change('temp')"
+            class="h-14 w-12 rounded-r-2xl border-2 border-l-0 border-zinc-700 bg-[#262626]"
+          >
+            <i
+              class="fa-solid fa-temperature-high text-[#FE9F1A] text-3xl flex justify-center items-center"
+            ></i>
+          </button>
         </div>
       </div>
     </div>
 
-
-    <script src="/src/index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
